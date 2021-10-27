@@ -9,6 +9,6 @@ $ git clone https://github.com/M4luk0/sftp_Backup.git
 # change the working directory
 $ cd sftp_Backup
 
-# usage (use sftp_Backup -h to view the entire help menu)
+# usage (use python3 sftp_Backup.py -h to view the entire help menu)
 $ python3 sftp_Backup.py 'mode' 'IP' 'port' 'username' 'password' 'folder to send' 'destination folder'
 ```
