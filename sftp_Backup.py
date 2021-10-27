@@ -12,7 +12,7 @@ import paramiko
 
 try:
     if sys.argv[1] == "-h":
-        print("usage: sshBackup.py 'mode' 'IP' 'port' 'username' 'password' 'folder to send' 'destination folder'\n\n"
+        print("usage: sftp_Backup.py 'mode' 'IP' 'port' 'username' 'password' 'folder to send' 'destination folder'\n\n"
               "mode = type 1 if you want to execute the script or 2 if you want to make a cronjob (you have to run mode 2 with sudo)\n\n"
               "IP = the hostname or IP where you want to send the backup\n\n"
               "port = ssh port of the remote host\n\n"
@@ -72,5 +72,5 @@ try:
             file.close()
 
 except:
-    print("Syntax error!\nYou have to introduce sshBackup.py 'mode' 'IP' 'port' 'username' 'password' 'folder to send' "
+    print("Syntax error!\nYou have to introduce sftp_Backup.py 'mode' 'IP' 'port' 'username' 'password' 'folder to send' "
           "'destination folder'\n\nTry sshBackup.py -h")
